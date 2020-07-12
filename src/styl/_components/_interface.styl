@@ -7,21 +7,19 @@
 		width 31px
 		height 31px
 		background-size 31px 31px
-	&-lg
+	&-figure
 		width 76px
 		height 76px
 		background-size 28px 28px
+		background-color $basic-white-color
+		box-shadow 0px 0px 20px rgba(37, 75, 172, 0.08)
+		border-radius 37px 37px 37px 5px
 		
-		&:before
-			pseudo()
-			position absolute
-			position-center()
-			width 118px
-			height 118px
-			background url('../img/icons/svg/ic-bg.svg') 50% 50% no-repeat / contain
-			z-index -1
+
 			
 .ic-block
+	font-size 15px
+	line-height 140%
 	.ic
 		margin-bottom 15px
 	&__title
@@ -86,13 +84,32 @@
 		object-fit cover
 		
 	&__chat
-		mask url('../img/decor/masks/chat-mask.svg')
+		mask url('../img/decor/masks/desktop/chat-mask.svg')
 		height 570px
 		
+	&__join-as-fan
+		height 514px
+		mask url('../img/decor/masks/desktop/adult-show-mask.svg')
+			
+	&__earnings
+		height 514px
+		mask url('../img/decor/masks/desktop/earnings-mask.svg')
+		
 .sect-entry
+	position relative
+	.container
+		position relative
+		z-index 2
 	&__chat
 		padding 200px 0 145px
 		
 		.sect-title
 			max-width 190px
 			margin-right 50px
+			
+
+	&__join-as-fan
+		padding 190px 0 170px
+		
+	&__earnings
+		padding 165px 0

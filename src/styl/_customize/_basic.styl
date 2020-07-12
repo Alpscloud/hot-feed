@@ -112,17 +112,33 @@ img
 		color $basic-white-color
 		font 40px $Bold
 		line-height 49px
+		margin-bottom 25px
 		&__row
 			.sect-title
 				max-width 230px
 				margin-right 100px
+				margin-bottom 0
 		
 	&-description
 		color $light-text-color
 		max-width 520px
+		line-height 150%
 	
+	&-content-block
+		position relative
+		max-width 440px
+		&.gutter-left
+			max-width 510px
+		
+		.content
+			margin-bottom 20px
+			&:last-child
+				margin-bottom 0
 	
 		
+.gutter-left
+	padding-left 70px
+	
 
 
 .text-center
@@ -182,6 +198,8 @@ img
 
 
 .content
+	font-size 18px
+	line-height 22px
 	*
 		&:last-child
 			margin-bottom 0
