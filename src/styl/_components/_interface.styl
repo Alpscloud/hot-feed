@@ -1,0 +1,98 @@
+.ic
+	display inline-block
+	background-position 50% 50%
+	background-repeat no-repeat
+	position relative
+	&-single
+		width 31px
+		height 31px
+		background-size 31px 31px
+	&-lg
+		width 76px
+		height 76px
+		background-size 28px 28px
+		
+		&:before
+			pseudo()
+			position absolute
+			position-center()
+			width 118px
+			height 118px
+			background url('../img/icons/svg/ic-bg.svg') 50% 50% no-repeat / contain
+			z-index -1
+			
+.ic-block
+	.ic
+		margin-bottom 15px
+	&__title
+		font 24px $Bold
+		color $basic-black-color
+		margin-bottom 7px
+		
+
+.ic-link
+	display inline-block
+	position relative
+	padding-left 21px
+	color $basic-white-color 
+	font 14px $SFReg
+	letter-spacing -0.408px
+	&__ic
+		display inline-block
+		position absolute
+		left 0
+		vertical-center()
+		width 14px
+		height 14px
+		
+	&:hover
+		color $accent-color
+		svg
+			fill $accent-color
+		
+	svg
+		svg()
+		fill $basic-white-color
+		
+
+// Masks
+
+.mask-block
+	overflow hidden
+	width 100%
+	position absolute
+	top 0
+	left 0
+	mask-size cover
+	z-index -1
+	&:before
+		pseudo()
+		background rgba(111, 186, 255, 0.34)
+		background -webkit-linear-gradient(284deg, rgba(111, 186, 255, 0.34) -0.16%, rgba(66, 0, 255, 0.2) 103.69%), -webkit-linear-gradient(321deg, rgba(202, 56, 126, 0.43) -0.2%, rgba(255, 92, 0, 0.43) 51.14%, rgba(255, 184, 0, 0.54) 103.57%)
+		background -o-linear-gradient(284deg, rgba(111, 186, 255, 0.34) -0.16%, rgba(66, 0, 255, 0.2) 103.69%), -o-linear-gradient(321deg, rgba(202, 56, 126, 0.43) -0.2%, rgba(255, 92, 0, 0.43) 51.14%, rgba(255, 184, 0, 0.54) 103.57%)
+		background linear-gradient(14deg, rgba(111, 186, 255, 0.34) -0.16%, rgba(66, 0, 255, 0.2) 103.69%), linear-gradient(51deg, rgba(202, 56, 126, 0.43) -0.2%, rgba(255, 92, 0, 0.43) 51.14%, rgba(255, 184, 0, 0.54) 103.57%)
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		z-index 1
+	img
+		display block
+		position absolute
+		position-center()
+		width 100%
+		height 100%
+		object-fit cover
+		
+	&__chat
+		mask url('../img/decor/masks/chat-mask.svg')
+		height 570px
+		
+.sect-entry
+	&__chat
+		padding 200px 0 145px
+		
+		.sect-title
+			max-width 190px
+			margin-right 50px

@@ -1,0 +1,186 @@
+.sect__promo
+	min-height 1000px
+	padding 150px 0
+	display flex
+	align-items center
+	background-color #d3d3d3
+	position relative
+	.container
+		position relative
+		z-index 5
+	&:after
+		pseudo()
+		position absolute
+		bottom 0
+		z-index 3
+		left 0
+		width 100%
+		height 200px
+		background url('../img/decor/promo-wave.svg') 50% 50% no-repeat / cover
+	&:before
+		pseudo()
+		position absolute
+		top 0
+		left 0
+		opacity .92
+		width 100%
+		height 100%
+		background rgba(48, 50, 85, 0.85)
+		background -webkit-linear-gradient(bottom, rgba(48, 50, 85, 0.85), rgba(48, 50, 85, 0.85)), -webkit-linear-gradient(334deg, #221545 -9.09%, #6260E8 21.27%, #9E4BD2 42.4%, #CB4276 57.71%)
+		background-image -o-linear-gradient(bottom, rgba(48, 50, 85, 0.85), rgba(48, 50, 85, 0.85)), -o-linear-gradient(334deg, #221545 -9.09%, #6260E8 21.27%, #9E4BD2 42.4, #CB4276 57.71%)
+		background-image linear-gradient(to top, rgba(48, 50, 85, 0.85), rgba(48, 50, 85, 0.85)), linear-gradient(64deg, #221545 -9.09%, #6260E8 21.27%, #9E4BD2 42.4%, #CB4276 57.71%)
+		z-index 1
+		background-blend-mode darken, normal
+		
+
+
+.title
+	color $basic-white-color
+	margin-bottom 70px
+	&-top,
+	&-bottom
+		display block
+		
+	&-top
+		position relative
+		padding-left 50px
+		font 39px $Bold
+		&:before
+			pseudo()
+			position absolute
+			vertical-center()
+			left 0
+			width 36px
+			height 37px
+			background url('../img/icons/svg/fire.svg') 50% 50% no-repeat / contain
+	&-bottom
+		text-transform uppercase
+		font 105px $Bold
+		text-shadow 0px 5px 20px rgba(0, 0, 0, 0.25)
+		
+	&-accent
+		display inline-block
+		padding 10px
+		background-color #3D6EEB
+		border-radius 6px
+		margin-left 20px
+		font-family $Bold
+		
+
+.promo-block
+	position relative
+	z-index 3
+	&__text
+		color rgba(255, 255, 255, 0.8)
+		font-size 19px
+		line-height 41px
+		margin-bottom 15px
+		
+
+.promo-img
+	position absolute
+	right 0
+	top 0
+	z-index 4
+	max-width 1080px
+	
+
+//About
+.sect__about
+	padding 190px 0 300px
+.about-us
+	position relative
+	&__content
+		position relative
+		max-width 460px
+		&-text
+			position relativez
+			z-index 1
+		
+		
+	&__img
+		position absolute
+		right 100%
+		vertical-center()
+		width 726px
+		margin-right -35px
+
+		img
+			display block
+			
+// Sect chat
+.sect__chat
+	position relative
+	padding-bottom 135px
+
+	
+
+
+.chat-phrases
+	padding-bottom 20px
+		
+.chat-phrase
+	display flex
+	align-items flex-start
+	justify-content flex-start
+	font 16px $SFReg
+	line-height 20px
+	margin-bottom 25px
+	&:last-child
+		margin-bottom 0
+	&__text
+		padding 22px 30px
+		border-radius 8px
+		flex 1
+		background rgba(255, 255, 255, 0.79)
+		background -webkit-linear-gradient(334deg, #FFFFFF 4.54%, rgba(255, 255, 255, 0.79) 95.6%)
+		background -o-linear-gradient(334deg, #FFFFFF 4.54%, rgba(255, 255, 255, 0.79) 95.6%)
+		background linear-gradient(64deg, #FFFFFF 4.54%, rgba(255, 255, 255, 0.79) 95.6%)
+		box-shadow 0px 10px 30px rgba($basic-black-color, 0.3)
+		max-width 250px
+		
+	&__avatar
+		flex none
+		border-radius 11px
+		border 2px solid $basic-white-color
+		width 35px
+		height 35px
+		margin-right 8px
+	&:nth-child(odd)
+		padding-right 120px
+		color $basic-black-color
+		text-align left
+		
+	&:nth-child(even)
+		padding-left 120px
+		color $basic-white-color
+		text-align right
+		
+		.chat-phrase
+			&__avatar
+				order 2
+				margin-right 0
+				margin-left 8px
+			&__text
+				order 1
+				background #5071E6
+				background -webkit-linear-gradient(#5071E6 0%, #5068E9 100%)
+				background -o-linear-gradient(#5071E6 0%, #5068E9 100%)
+				background linear-gradient(#5071E6 0%, #5068E9 100%)
+				box-shadow 0px 4px 36px rgba(49, 71, 185, 0.45)
+				
+
+.sect__chat
+	
+	.icons__row
+		margin 55px 0 140px
+	
+
+	
+	
+
+
+
+	
+
+		

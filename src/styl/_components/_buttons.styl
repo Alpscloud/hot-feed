@@ -1,25 +1,26 @@
 .btn
 	display inline-block
-	padding 12px 15px
-	font 1em $Reg
-	line-height 1
 	text-align center
-	color $text-color
-	border 2px solid transparent
+	border-radius 8px
+	padding 15px 30px
 	transition all .17s ease-in-out
 	backface-visibility hidden
-	&__accent
-		background-color $accent-color
-	&__shadow
-		background-color transparent
-	&__dark
-		background-color $basic-black-color
-	&__close
-		display inline-block
-		width 20px
-		height 20px
-		background url('../img/icons/svg/close-ic.svg') center center no-repeat
-		background-size 20px 20px
+	background #6260E8
+	background -webkit-linear-gradient(327deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
+	background -o-linear-gradient(327deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.6%1)
+	background linear-gradient(57deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
+	box-shadow 0px 10px 40px rgba(151, 40, 80, 0.47)
+	font 17px $Bold
+	text-transform uppercase
+	color $basic-white-color
+	span
+		display block
+		position relative
+		z-index 1
+		
+	&-lg
+		padding 22px 83px
+	
 		
 	&__search
 		&::-ms-clear

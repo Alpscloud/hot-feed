@@ -107,9 +107,21 @@ img
 	width 100%
 	height 100%
 	
-.sect-title
-	font 2em $Bold
-	margin-bottom 40px
+.sect
+	&-title
+		color $basic-white-color
+		font 40px $Bold
+		line-height 49px
+		&__row
+			.sect-title
+				max-width 230px
+				margin-right 100px
+		
+	&-description
+		color $light-text-color
+		max-width 520px
+	
+	
 		
 
 
@@ -168,6 +180,39 @@ img
 	visiiblity hidden
 
 
+
+.content
+	*
+		&:last-child
+			margin-bottom 0
+			
+	h3
+		font 36px $Bold
+		color $basic-black-color
+		line-height 36px
+		margin-bottom 35px
+		
+			
+	p
+		margin-bottom 30px
+		
+	h4
+		font-family $Med
+		line-height 36px
+		font-size 21px
+		margin-bottom 5px
+		
+
+.secondary-color-title
+	color $secondary-color
+	background -webkit-linear-gradient(#5071E6 0%, #5068E9 100%)
+	background -o-linear-gradient(#5071E6 0%, #5068E9 100%)
+	background linear-gradient(#5071E6 0%, #5068E9 100%)
+	-webkit-background-clip text
+	-webkit-text-fill-color transparent
+	
+.accent-color-title
+	color $accent-color
 	
 
 // ========== ========== ========== ========== ========== ==========
