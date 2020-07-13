@@ -5,24 +5,82 @@
 	padding 15px 30px
 	transition all .17s ease-in-out
 	backface-visibility hidden
-	background #6260E8
-	background -webkit-linear-gradient(327deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
-	background -o-linear-gradient(327deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.6%1)
-	background linear-gradient(57deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
 	box-shadow 0px 10px 40px rgba(151, 40, 80, 0.47)
 	font 17px $Bold
 	text-transform uppercase
 	color $basic-white-color
+	border-overflow()
+	position relative
+	overflow hidden
+	&:before,
+	&:after
+		pseudo()
+		position absolute
+		position-center()
+		width 100%
+		height 100%
+		transition opacity .17s ease-in-out
+	&:before
+		background #6260E8
+		background -webkit-linear-gradient(327deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
+		background -o-linear-gradient(327deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.6%1)
+		background linear-gradient(57deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
+	&:after
+		background -webkit-linear-gradient(354deg, #506EE7 -12.59%, #9E4BD2 55.02%, #DC2A6B 107.48%)
+		background -o-linear-gradient(354deg, #506EE7 -12.59%, #9E4BD2 55.02%, #DC2A6B 107.48%)
+		background linear-gradient(84deg, #506EE7 -12.59%, #9E4BD2 55.02%, #DC2A6B 107.48%)
+		z-index 1
+		opacity 0
+		visibility hidden
+		
+	&:hover
+		box-shadow 0px 3px 16px rgba(98, 96, 232, 0.33)
+		&:after
+			opacity 1
+			visibility visible
+		
 	span
 		display block
 		position relative
-		z-index 1
+		z-index 2
+		
+		
 		
 	&-transparent
 		color #CC4174
-		background transparent
-		border 2px solid
+		box-shadow 0px 2px 4px rgba(204, 65, 116, 0.28)
+		&:after
+			background $basic-white-color
+			opacity 1
+			visibility visible
+			width calc(100% - 4px)
+			height calc(100% - 4px)
+			border-radius 7px
+			box-shadow inset 2px 4px 7px rgba(204, 65, 116, 0.28)
+			
+		&:hover
+			color #9E4BD2
+			box-shadow 0px 2px 4px rgba(204, 65, 116, 0.28)
+			&:before
+				background -webkit-linear-gradient(354deg, #506EE7 -12.59%, #9E4BD2 55.02%, #DC2A6B 107.48%)
+				background -o-linear-gradient(354deg, #506EE7 -12.59%, #9E4BD2 55.02%, #DC2A6B 107.48%)
+				background linear-gradient(84deg, #506EE7 -12.59%, #9E4BD2 55.02%, #DC2A6B 107.48%)
 		
+		
+		
+		
+	&-secondary-gradient
+		box-shadow 0px 10px 20px rgba(169, 42, 164, 0.3)
+		&:before
+			background #9E4BD2
+			background -webkit-linear-gradient(2deg, #9E4BD2 0%, #FF370C 100.61%)
+			background -o-linear-gradient(2deg, #9E4BD2 0%, #FF370C 100.61%)
+			background linear-gradient(92deg, #9E4BD2 0%, #FF370C 100.61%)	
+		&:after
+			background #6260E8
+			background -webkit-linear-gradient(2deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
+			background -o-linear-gradient(2deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
+			background linear-gradient(92deg, #6260E8 0%, #9E4BD2 41.92%, #E93C3A 100.61%)
 		
 	&-lg
 		padding 22px 83px
@@ -31,7 +89,15 @@
 		padding 18px 63px
 		
 	&-widest
-		padding 18px 96px
+		width 100%
+		max-width 300px
+		padding 18px 20px
+		// &.btn-transparent
+		// 	padding 2px
+		// 	span
+		// 		padding 16px 18px
+			
+		
 		
 	&-with-ic
 		text-transform none

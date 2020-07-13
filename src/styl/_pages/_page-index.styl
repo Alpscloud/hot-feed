@@ -17,20 +17,7 @@
 		width 100%
 		height 200px
 		background url('../img/decor/promo-wave.svg') 50% 50% no-repeat / cover
-	&:before
-		pseudo()
-		position absolute
-		top 0
-		left 0
-		opacity .92
-		width 100%
-		height 100%
-		background rgba(48, 50, 85, 0.85)
-		background -webkit-linear-gradient(bottom, rgba(48, 50, 85, 0.85), rgba(48, 50, 85, 0.85)), -webkit-linear-gradient(334deg, #221545 -9.09%, #6260E8 21.27%, #9E4BD2 42.4%, #CB4276 57.71%)
-		background-image -o-linear-gradient(bottom, rgba(48, 50, 85, 0.85), rgba(48, 50, 85, 0.85)), -o-linear-gradient(334deg, #221545 -9.09%, #6260E8 21.27%, #9E4BD2 42.4, #CB4276 57.71%)
-		background-image linear-gradient(to top, rgba(48, 50, 85, 0.85), rgba(48, 50, 85, 0.85)), linear-gradient(64deg, #221545 -9.09%, #6260E8 21.27%, #9E4BD2 42.4%, #CB4276 57.71%)
-		z-index 1
-		background-blend-mode darken, normal
+	
 		
 
 
@@ -55,7 +42,7 @@
 			background url('../img/icons/svg/fire.svg') 50% 50% no-repeat / contain
 	&-bottom
 		text-transform uppercase
-		font 105px $Bold
+		font 105px $Black
 		text-shadow 0px 5px 20px rgba(0, 0, 0, 0.25)
 		
 	&-accent
@@ -65,6 +52,20 @@
 		border-radius 6px
 		margin-left 20px
 		font-family $Bold
+		
+	&-words
+		position relative
+		&:before
+			content attr(data-first-words)
+			animation change-words infinite 5s linear
+			
+@keyframes change-words
+	0%
+		content attr(data-first-words)
+	50%
+		content attr(data-second-words)
+	100%
+		content attr(data-third-words)
 		
 
 .promo-block
@@ -205,6 +206,57 @@
 // Earnings
 .sect__earnings
 	padding-bottom 130px
+
+.sect__gallery
+	padding-bottom 100px
+	
+.gallery
+	margin-bottom 55px
+	
+	&__row
+		margin-left -4px
+		margin-right -4px
+		
+	&-btns
+		&__row
+			span
+				display inline-block
+				margin 0 25px
+				font-size 18px
+	
+.gallery-item
+	display block
+	width 100%
+	border-radius 5px
+	border-overflow()
+	overflow hidden
+	position relative
+	padding-top 100%
+	&__video
+		&:before
+			pseudo()
+			position absolute
+			top 9px
+			left 9px
+			z-index 1
+			width 16px
+			height 16px
+			background url('../img/icons/svg/play.svg') 50% 50% no-repeat / 16px 16px
+			border-radius 50%
+			box-shadow 0px 0px 11px rgba(0, 0, 0, 0.25)
+	img
+		display block
+		position absolute
+		position-center()
+		width 100%
+		height 100%
+		object-fit cover
+		
+	&__wrapper
+		padding 4px
+		width 25%
+		
+
 		
 		
 
