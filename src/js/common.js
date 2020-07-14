@@ -17,5 +17,35 @@ $(document).ready(function() {
 		}, 200);
 	});
 
+	var words = $('.title-words');
+
+	if(words.length > 0) {
+		var index = 0;
+		
+		function changer() {
+			var wordsArr = [words.attr('data-first-words'), words.attr('data-second-words'), words.attr('data-third-words')];
+			index++;
+			
+			if(index <= 2) {
+				words.text(wordsArr[index]);
+
+				setTimeout(changer, 1000);
+			} else {
+				index = 0;
+				words.text(wordsArr[index]);
+
+				setTimeout(changer, 1000);
+
+			}
+
+
+		}
+
+		changer();
+	}
+	
+
+	
+
 
 });

@@ -4,17 +4,56 @@
 	background-repeat no-repeat
 	position relative
 	&-single
-		width 31px
-		height 31px
-		background-size 31px 31px
+		width 34px
+		height 34px
+		background-size contain
+		
+		&-chat
+			background-image url('../img/icons/chat.png')
+		&-unique
+			background-image url('../img/icons/unique.png')
+		&-security
+			background-image url('../img/icons/security.png')
+		&-bots
+			background-image url('../img/icons/bot.png')
+			
+			
+
 	&-figure
 		width 76px
 		height 76px
-		background-size 28px 28px
-		background-position left 22px top 29px
+		background-size 34px 34px
+		background-position left 22px top 24px
 		background-color $basic-white-color
 		box-shadow 0px 0px 20px rgba(37, 75, 172, 0.08)
 		border-radius 37px 37px 37px 5px
+		
+		&-star
+			background-image url('../img/icons/star.png')
+			background-size 32px 32px
+		&-shield
+			background-image url('../img/icons/shield.png')
+			background-size 32px 37px
+		&-bomb
+			background-image url('../img/icons/bomb.png')
+			background-size 33px 33px
+			
+		&-cash
+			background-image url('../img/icons/cash.png')
+			background-size 37px 27px
+			background-position left 19px top 30px
+		&-people
+			background-image url('../img/icons/people.png')
+			background-size 39px 32px
+			background-position left 17px top 27px
+		&-hand
+			background-image url('../img/icons/hand.png')
+			background-size 31px 33px
+			background-position left 22px top 27px
+		&-fire
+			background-image url('../img/icons/fire.png')
+			background-size 23px 27px
+			background-position left 22px top 27px
 		
 
 			
@@ -24,7 +63,8 @@
 	.ic
 		margin-bottom 15px
 	&__title
-		font 24px $Bold
+		font-size 24px 
+		font-bold()
 		color $basic-black-color
 		margin-bottom 7px
 		line-height 150%
@@ -64,6 +104,7 @@
 	top 0
 	left 0
 	z-index -1
+	height 100%
 
 	img
 		display block
@@ -74,45 +115,50 @@
 		object-fit cover
 		
 	&__chat
-		mask url('../img/decor/masks/desktop/chat-mask.svg')
-		height 570px
+		mask-image url('../img/decor/masks/desktop/chat-mask.svg')
+		
 		mask-size cover
 		mask-repeat no-repeat
 		
 		
 	&__join-as-fan
-		mask url('../img/decor/masks/desktop/adult-show-mask.svg')
-		height 514px
+		mask-image url('../img/decor/masks/desktop/adult-show-mask.svg')
+	
 		mask-size cover
 		mask-repeat no-repeat
 		
 		
 			
 	&__earnings
-		mask url('../img/decor/masks/desktop/earnings-mask.svg')
-		height 514px
+		mask-image url('../img/decor/masks/desktop/earnings-mask.svg')
+
 		mask-size cover
 		mask-repeat no-repeat
 		
-		
+	
 .sect-entry
 	position relative
+	display flex
+	align-items center
 	.container
 		position relative
 		z-index 2
 	&__chat
-		padding 200px 0 145px
+		min-height 570px
 		
 		.sect-title
 			max-width 190px
 			margin-right 50px
 			
+			&__row
+				padding-top 55px
+			
 
 	&__join-as-fan
-		padding 190px 0 170px
+		min-height 514px
 		
 	&__earnings
-		padding 165px 0
+		min-height 514px
 		
 
 .socials
@@ -137,3 +183,31 @@
 		&:hover
 			svg
 				fill #B1BCE1
+				
+
+.emoji
+	&:before
+		content ''
+		display inline-block
+		vertical-align middle
+		transform translateY(-1px)
+		width 16px
+		height 16px
+		background-size contain
+		background-position 50% 50%
+		background-repeat no-repeat
+	&-kiss
+		&:before
+			background-image url('../img/icons/svg/emoji/kiss.png')
+	&-devil
+		&:before
+			background-image url('../img/icons/svg/emoji/devil.png')
+	&-peach
+		&:before
+			background-image url('../img/icons/svg/emoji/peach.png')
+	&-fire
+		
+		&:before
+			width 46px
+			background-image url('../img/icons/svg/emoji/fire.png')
+		

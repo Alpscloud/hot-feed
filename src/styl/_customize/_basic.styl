@@ -15,7 +15,9 @@ html
 
 
 body
-	font 16px $Reg
+	font-size 16px
+	font-family 'Inter', Arial, sans-serif
+	font-reg()
 	line-height 1.45
 	overflow-x hidden
 	min-width 320px
@@ -110,10 +112,12 @@ img
 .sect
 	&-title
 		color $basic-white-color
-		font 40px $Bold
+		font-size 40px
+		font-bold()
 		line-height 49px
 		margin-bottom 25px
 		&__row
+			flex-wrap nowrap
 			.sect-title
 				max-width 230px
 				margin-right 100px
@@ -131,6 +135,9 @@ img
 	&-content-block
 		position relative
 		max-width 440px
+		&__text
+			position relative
+			z-index 2
 		&.gutter-left
 			max-width 510px
 		
@@ -209,7 +216,8 @@ img
 			margin-bottom 0
 			
 	h3
-		font 36px $Bold
+		font-size 36px
+		font-bold()
 		color $basic-black-color
 		line-height 36px
 		margin-bottom 35px
@@ -219,7 +227,7 @@ img
 		margin-bottom 30px
 		
 	h4
-		font-family $Med
+		font-med()
 		line-height 36px
 		font-size 21px
 		margin-bottom 19px
