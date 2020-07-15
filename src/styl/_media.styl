@@ -88,6 +88,8 @@
 	.sect-title__row 
 		.sect-title
 			margin-right 50px
+			
+
 		
 
 +max-screen(1100px)
@@ -101,8 +103,9 @@
 			left auto
 			top auto
 			right auto
-			margin-right 0
-			width 100%
+			margin 0 auto 100px auto
+			
+			
 			img
 				margin 0 auto
 	.sect__about
@@ -133,6 +136,9 @@
 		min-height 790px
 		padding-top 220px
 		padding-bottom 130px
+		
+	.sect__about
+		padding-top 100px
 		
 	// Sect chat
 	.sect__chat
@@ -276,10 +282,34 @@
 		font-size 36px
 		line-height 36px
 		margin-bottom 25px
+		span
+			display block
 		
 	.sect-subtitle
 		font-size 16px
 		margin-bottom 38px
+	
+	.chat-phrases
+		padding-bottom 0
+		
+	.chat-phrase
+		max-width 225px
+		margin-bottom 10px
+		white-space nowrap
+		&:nth-child(odd)
+			padding-right 28px
+		&:nth-child(even)
+			padding-left 28px
+		&__text
+			font-size 10.76px
+			line-height 13px
+			padding 14px
+		&__avatar
+			width 23px
+			height 23px
+			border-radius 7.4px
+			border-width 1.35px
+			margin-right 5px
 			
 	// About
 	.sect__about
@@ -320,7 +350,7 @@
 
 	.sect__chat
 		.icons-blocks__row
-			margin-bottom 60px
+			margin-bottom 100px
 			.ic-block__wrapper
 				width 100%
 				padding-bottom 0
@@ -331,9 +361,14 @@
 	.ic-block__title
 		font-size 24px
 		
+	.ic-single
+		width 26px
+		height 26px
+		margin-bottom 0
+		
 	.ic-block 
 		.ic
-			margin-bottom 10px
+			margin-bottom 0
 			
 		&__wrapper
 			width 100%
@@ -364,6 +399,8 @@
 			
 	.footer
 		padding 110px 0 20px
+		&:before
+			height 80px
 
 		.logo
 			display inline-block
@@ -371,6 +408,9 @@
 				display block
 				margin 0 auto 25px auto
 				max-width 40px
+				
+		&-nav
+			margin-top 25px
 				
 	.disclaimer
 		font-size 12px
@@ -403,6 +443,8 @@
 		.sect-title__row
 			padding-top 85px
 			
+
+			
 +max-screen(480px)
 	.promo-block
 		.btn
@@ -418,17 +460,18 @@
 			max-width 100%
 			
 	// About
+
 	.about-us__img
-		width 460px
-		margin-left -30px
+		margin-bottom 70px
 		
 	.sect-content__img
-		width 400px
+		width 440px
+		margin-bottom 30px
 		
 	.sect__earnings,
 	.sect__join-as-fan 
 		.sect-content-block
-			margin-top -165px
+			margin-top -210px
 		
 		
 +max-screen(421px)
@@ -461,6 +504,11 @@
 		&__text
 			padding 15px
 			
+	.footer
+		&:before
+			height 54px
+			background-image url('../img/decor/footer-wave-mobile.svg')
+			
 +max-screen(400px)
 	// Promo
 		
@@ -470,9 +518,9 @@
 		&-bottom
 			font-size 45px
 			
-+max-screen(380px)
-	.about-us__img
-		width 380px
+// +max-screen(380px)
+// 	.about-us__img
+// 		width 380px
 		
 +max-screen(350px)
 	.title-bottom

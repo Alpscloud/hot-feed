@@ -11,7 +11,7 @@
 	&:after
 		pseudo()
 		position absolute
-		bottom 0
+		bottom -2px
 		z-index 3
 		left 0
 		width 100%
@@ -76,6 +76,11 @@
 	z-index 4
 	max-width 1080px
 	
+.picture
+	display block
+	width 100%
+	height 100%
+	
 
 //About
 
@@ -87,6 +92,8 @@
 		max-width 440px
 .about-us
 	position relative
+
+		
 	&__content
 		&-text
 			position relativez
@@ -95,13 +102,39 @@
 		
 	&__img
 		position absolute
-		right 100%
+		left 0
 		vertical-center()
-		width 726px
-		margin-right -35px
+		width 575px
+
+		border-radius 25px
+		box-shadow 23.3863px 20.7878px 62.3634px rgba(43, 62, 133, 0.32)
+		&:before,
+		&:after
+			pseudo()
+			position absolute
+			z-index -1
+		&:before
+			top 10px
+			height 458px
+			width 181px
+			background url('../img/shadow-right.svg') 50% 50% no-repeat / cover
+			left 100%
+			margin-left -50px
+		&:after
+			top 100%
+			left 0
+			width 448px
+			height 152px
+			background url('../img/shadow-bottom.svg') 50% 50% no-repeat / cover
+			margin-top -50px
+			
+			
 
 		img
 			display block
+			width 100%
+			
+			
 			
 // Sect chat
 .sect__chat
@@ -113,6 +146,7 @@
 		margin-right 25px
 .chat-card-img
 	position relative
+	max-width 350px
 	.ic
 		position absolute
 		right 60px
@@ -135,13 +169,14 @@
 	display flex
 	align-items flex-start
 	justify-content flex-start
-	font 16px $SFReg
+	font-size 16px
+	font-reg()
 	line-height 20px
 	margin-bottom 25px
 	&:last-child
 		margin-bottom 0
 	&__text
-		padding 22px 30px
+		padding 20px
 		border-radius 8px
 		flex 1
 		background rgba(255, 255, 255, 0.79)
@@ -188,8 +223,7 @@
 		margin 55px -15px 140px -15px
 		
 
-.chat-card-img
-	max-width 450px
+
 
 
 // Joins as fan
@@ -219,7 +253,7 @@
 	padding-bottom 130px
 
 .sect__gallery
-	padding-bottom 75px
+	padding-bottom 35px
 	
 .gallery
 	margin-bottom 55px
