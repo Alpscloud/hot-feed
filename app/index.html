@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<title>My Startng Template</title>
+	<title>Hot Feed</title>
 
 	<!-- Meta tags -->
 	<meta charset="UTF-8">
@@ -9,23 +9,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<meta name="author" content="Serhii 'winde' Kuptsov">
-
-	<!-- Chrome, Firefox, Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	<!-- //Meta tags -->
 	
 	<!-- Favicons -->
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#CC4174">
 	<!-- //Favicons -->
+	<meta name="msapplication-TileColor" content="#CC4174">
+	<meta name="theme-color" content="#CC4174">
+	<meta name="msapplication-navbutton-color" content="#CC4174">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#CC4174">
 
 	<!-- All libs styles -->
 <!-- 	<link rel="stylesheet" href="css/libs.min.css"> -->
 	<!-- Main file with styles -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -34,34 +35,504 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-</head>
-<body>
+</head><body>
 	
 	<!-- CONTENT WRAPPER -->
 	<div class="content__wrapper">
-	
+
 		<!-- Header -->
-		<header class="header"></header>
+		<header class="header">
+	<div class="container">
+		<div class="row align-vertical-center align-horisontal-between">
+			<!-- logo -->
+			<a href="/" class="logo" title="Site Name">
+				<img src="img/logo.svg" alt="Site Name Logo">
+				<span>Site Name</span>
+			</a>
+			<!-- //logo -->
+
+			<div class="header-tools">
+				<!-- Login -->
+				<a href="#" class="ic-link">
+					<i class="ic-link__ic">
+						<svg  viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.3594 0H1.64062C0.735984 0 0 0.735984 0 1.64062V3.82812H1.09375V1.64062C1.09375 1.33908 1.33908 1.09375 1.64062 1.09375H12.3594C12.6609 1.09375 12.9062 1.33908 12.9062 1.64062V12.3594C12.9062 12.6609 12.6609 12.9062 12.3594 12.9062H1.64062C1.33908 12.9062 1.09375 12.6609 1.09375 12.3594V10.1719H0V12.3594C0 13.264 0.735984 14 1.64062 14H12.3594C13.264 14 14 13.264 14 12.3594V1.64062C14 0.735984 13.264 0 12.3594 0Z" />
+							<path d="M6.5625 3.60156L5.78911 4.37495L7.86723 6.45308H0V7.54683H7.86723L5.78911 9.62495L6.5625 10.3983L9.96089 6.99995L6.5625 3.60156Z" />
+						</svg>
+					</i>
+					<span>Log in</span>
+				</a>
+
+				<!-- Registration -->
+				<a href="#" class="ic-link">
+					<i class="ic-link__ic">
+						<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.98636 0.0136719C4.75926 0.0136719 2.94738 1.82558 2.94738 4.05264C2.94738 5.43211 3.64271 6.65208 4.70113 7.38103C3.71295 7.72204 2.80722 8.28532 2.0463 9.04624C0.726715 10.3659 0 12.1203 0 13.9864H1.09162C1.09162 10.736 3.73598 8.09164 6.98636 8.09164C9.21345 8.09164 11.0253 6.27974 11.0253 4.05264C11.0253 1.82555 9.21345 0.0136719 6.98636 0.0136719ZM6.98636 7.00003C5.36118 7.00003 4.039 5.67785 4.039 4.05267C4.039 2.4275 5.36118 1.10529 6.98636 1.10529C8.61153 1.10529 9.93371 2.42747 9.93371 4.05267C9.93371 5.67788 8.61153 7.00003 6.98636 7.00003Z" />
+							<path d="M11.7075 10.602V8.30957H10.6159V10.602H8.32349V11.6936H10.6159V13.986H11.7075V11.6936H13.9999V10.602H11.7075Z" />
+						</svg>
+					</i>
+					<span>Create account</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+	<!-- //container -->
+
+</header>
 		<!-- //Header -->
 
 		<!-- Main -->
-		<main class="main"></main>
+		<main class="main">
+			<!-- Promo -->
+			<section class="sect__promo bg" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+					<div class="promo-block">
+						<h1 class="title">
+							<span class="title-top">Get <span class="title-accent title-words" data-first-words="Hot Feed" data-second-words="Sex Video" data-third-words="Private Photos"></span></span>
+							<span class="title-bottom">uncensored</span>
+						</h1>
+
+						<p class="promo-block__text">Enjoy nudes from real instagram models</p>
+
+						<a href="#" class="btn btn-lg"><span>Get started </span></a>
+					</div>
+				</div>
+				<!-- //container -->
+
+
+				<div class="promo-img">
+					<picture class="picture">
+						<source srcset="img/promo-img.webp" type="image/webp">
+						<source srcset="img/promo-img.png" type="image/png">
+						<img src="img/promo-img.png" alt="Hot Feed">
+					</picture>
+					
+				</div>
+			</section>
+			<!-- //Promo -->
+
+
+			<!-- Section about -->
+			<section class="sect__about">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+					<div class="about-us row align-horisontal-end">
+
+						<div class="about-us__img">
+							<img src="img/tablet-img-lg.png" alt="">
+						</div>
+
+						<div class="sect-content-block">
+
+							
+							<div class="about-us__content-text">
+
+								<h3 class="logo-block-title">
+									<img src="img/logo.svg" alt="">
+									<span>Site Name</span>
+								</h3>
+
+								<div class="content">
+									<h4 class="secondary-color-title">Net for fans and their idols</h4>
+									<p>This is a new space for communication with bloggers, viewing photos and videos without censorship and restrictions. Bloggers and Models regularly create a large number of interesting content that we love to follow and enjoy.</p>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section about -->
+
+			<!-- Section chat -->
+			<section class="sect__chat">
+				<h2 class="w3c">Discover. Chat.  Fanatic.</h2>
+
+				<div class="sect-entry sect-entry__chat">
+					<div class="container">
+
+						<div class="row align-vertical-end aling-horisontal-start sect-title__row">
+							<h3 class="sect-title">Discover. Chat. Fanatic.</h3>
+
+							<div class="chat-phrases">
+								<!-- Phrase -->
+								<div class="chat-phrase">
+									<div class="chat-phrase__avatar bg" style="background-image: url('img/chat/avatar-1.jpg');"></div>
+									<div class="chat-phrase__text">
+										<p>Hi <i class="emoji emoji-kiss"></i> Want to see my new<br>underwear? <i class="emoji emoji-peach"></i><i class="emoji emoji-fire"></i></p>
+									</div>
+								</div>
+								<!-- //Phrase -->
+
+								<!-- Phrase -->
+								<div class="chat-phrase">
+									<div class="chat-phrase__avatar bg" style="background-image: url('img/chat/avatar-2.jpg');"></div>
+									<div class="chat-phrase__text">
+										<p>Hmm... sounds interesting)<br><i class="emoji emoji-devil"></i> Send a photo</p>
+									</div>
+								</div>
+								<!-- //Phrase -->
+							</div>
+						</div>
+					</div>
+					<!-- //container -->
+					<div class="mask-block mask-block__chat">
+						<picture class="picture">
+							<source srcset="img/backgrounds/girl-1-bg.webp" type="image/webp">
+							<source srcset="img/backgrounds/girl-1-bg.jpg" type="image/jpeg">
+							<img src="img/backgrounds/girl-1-bg.jpg" alt="Hot Feed">
+						</picture>
+
+					</div>
+				</div>
+
+
+				<div class="container">
+
+					<div class="row align-horisontal-start row-gutters icons-blocks__row">
+						<div class="col-w-25 col-gutters ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-single ic-single-chat"></i>
+								<h4 class="ic-block__title">Private live chat</h4>
+								<p>We only have live communication with real people whose identity has been verified</p>
+							</div>
+						</div>
+
+						<div class="col-w-25 col-gutters ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-single ic-single-unique"></i>
+								<h4 class="ic-block__title">Unique daily feed</h4>
+								<p>Celebrities daily publish many unique sex photos and videos to the delight of their Fans.</p>
+							</div>
+						</div>
+
+						<div class="col-w-25 col-gutters ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-single ic-single-security"></i>
+								<h4 class="ic-block__title">Full security</h4>
+								<p>We care about the security of our users and guarantee that their data and identity will not be disclosed.</p>
+							</div>
+						</div>
+
+						<div class="col-w-25 col-gutters ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-single ic-single-bots"></i>
+								<h4 class="ic-block__title">No ads and bots</h4>
+								<p>Communicating directly with a celebrity you will receive hot photos and videos in private messages.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row align-horisontal-between align-vertical-center row-nowrap get-closer__row">
+						<div class="sect-content-block gutter-left">
+							<div class="content">
+								<h3>Get closer</h3>
+								<h4 class="secondary-color-title">Do what you want!</h4>
+								<p>Get the full access to unique hot photos and videos, always get feedback from your bloggers and chat with them. Our influencers focus on creating content, and regularly communicate very closely with their audience.</p>
+							</div>
+
+							<a href="#" class="btn btn-with-ic btn-with-ic__account btn-wide"><span>Create account</span></a>
+						</div>
+
+						<div class="chat-card-img">
+							<i class="ic ic-figure ic-figure-fire"></i>
+							<img src="img/chat/chat-card-1.png" alt="">
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+
+			</section>
+			<!-- //Section chat -->
+
+			<!-- Section join-as-fan -->
+			<section class="sect__join-as-fan">
+				<h2 class="w3c">Adult Personal Show</h2>
+
+				<div class="sect-entry sect-entry__join-as-fan">
+					<div class="container">
+
+						<div class="row align-vertical-center aling-horisontal-start sect-title__row">
+							<h3 class="sect-title"><span>Adult</span> Personal Show</h3>
+
+							<div class="sect-description">
+								<p>These good girls will fulfill your every whim!<br>Let her know that you like what you saw, the more compliments you send, the hotter your personal show will be. Do not be shy! Whatever your fantasy, you can find its embodiment here.</p>
+							</div>
+						</div>
+					</div>
+					<!-- //container -->
+					<div class="mask-block mask-block__join-as-fan">
+						<picture class="picture">
+							<source srcset="img/backgrounds/girl-2-bg.webp" type="image/webp">
+							<source srcset="img/backgrounds/girl-2-bg.jpg" type="image/jpeg">
+							<img src="img/backgrounds/girl-2-bg.jpg" alt="Hot Feed">
+						</picture>
+					</div>
+				</div>
+
+
+				<div class="container">
+
+
+					<div class="sect-content__row row align-horisontal-end align-vertical-center">
+
+						<div class="sect-content-block">
+
+							<div class="sect-content__img">
+								<img src="img/chat/chat-card-2.png" alt="">
+				
+							</div>
+
+							<div class="sect-content-block__text">
+
+								<div class="content">
+									<h3>Have fun chatting beauties</h3>
+									<p>Become a Fan, if you like live chat and want to get unique hot photos and videos daily</p>
+									<h4 class="secondary-color-title">Who is it for?</h4>
+									<p>For everyone who wants to be followers, because the feed will be to everyone’s taste.</p>
+								</div>
+
+								<a href="#" class="btn btn-widest btn-secondary-gradient"><span>Join as Fan</span></a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row row-gutters-lg align-horisontal-start icons-blocks__row">
+						<div class="col-w-33 col-gutters-lg ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-figure ic-figure-star"></i>
+								<h4 class="ic-block__title">No censorship</h4>
+								<p>Forget about confines and prohibitions. You will have access to all the photos and videos of your favorite models and bloggers.</p>
+							</div>
+						</div>
+
+						<div class="col-w-33 col-gutters-lg ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-figure ic-figure-shield"></i>
+								<h4 class="ic-block__title">No fakes</h4>
+								<p>All models on the site confirm their identity during registration, so you can be sure that you are communicating with real people.</p>
+							</div>
+						</div>
+
+						<div class="col-w-33 col-gutters-lg ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-figure ic-figure-bomb"></i>
+								<h4 class="ic-block__title">Nudes in direct</h4>
+								<p>Do you want to chat with a beautiful model, but they ignore you? This will not happen here, because the models will write to you first.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+
+			</section>
+			<!-- //Section join-as-fan -->
+
+			<!-- Section earnings -->
+			<section class="sect__earnings">
+				<h2 class="w3c">Earnings For Bloggers</h2>
+
+				<div class="sect-entry sect-entry__earnings">
+					<div class="container">
+
+						<div class="row align-vertical-center aling-horisontal-start sect-title__row">
+							<h3 class="sect-title"><span>Earnings</span> For Bloggers</h3>
+
+							<div class="sect-description">
+								<p>Get extra income just by doing what you love: take photos and videos, publish them, chat with fans. If you want to earn big money on it, then join us as a Celebrity. We will give you free access to the platform for earning on making content. </p>
+							</div>
+						</div>
+					</div>
+					<!-- //container -->
+					<div class="mask-block mask-block__earnings">
+						<picture class="picture">
+							<source srcset="img/backgrounds/girl-3-bg.webp" type="image/webp">
+							<source srcset="img/backgrounds/girl-3-bg.jpg" type="image/jpeg">
+							<img src="img/backgrounds/girl-3-bg.jpg" alt="Hot Feed">
+						</picture>
+				
+					</div>
+				</div>
+
+
+				<div class="container">
+
+
+					<div class="sect-content__row row align-horisontal-end align-vertical-center">
+
+						<div class="sect-content-block">
+
+							<div class="sect-content__img sect-content__img--lg">
+								<img src="img/chat/chat-card-3.png" alt="">
+							</div>
+
+							<div class="sect-content-block__text">
+
+								<div class="content">
+									<h3>Monetize your popularity</h3>
+									<p>Become a Celebrity if you want to monetize your popularity and earn extra income by taking photos and videos.</p>
+									<h4 class="accent-color-title">Who is it for?</h4>
+									<p>Bloggers, models and photographers with over 1000 followers on social networks. To join us you do not need to have the appearance of a model, you just need to be Open and sociable.</p>
+								</div>
+
+								<a href="#" class="btn btn-widest btn-transparent"><span>Join as Celebrity</span></a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row row-gutters-lg align-horisontal-start icons-blocks__row">
+						<div class="col-w-33 col-gutters-lg ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-figure ic-figure-cash"></i>
+								<h4 class="ic-block__title">Way of earning</h4>
+								<p>To earn money with us, you don’t need to look for sponsors and create advertising collaborations. Earn money from every photo and message. We do not have any commissions, and the minimum withdrawal amount is only $ 50.</p>
+							</div>
+						</div>
+
+						<div class="col-w-33 col-gutters-lg ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-figure ic-figure-people"></i>
+								<h4 class="ic-block__title">Subscribers growth</h4>
+								<p>Large audience will bring more income. It is very easy to attract the attention of new followers, for this it is enough just to be active. You can also lure your followers from other platforms for your profit.</p>
+							</div>
+						</div>
+
+						<div class="col-w-33 col-gutters-lg ic-block__wrapper">
+							<div class="ic-block">
+								<i class="ic ic-figure ic-figure-hand"></i>
+								<h4 class="ic-block__title">Privacy and Security</h4>
+								<p>You can remain anonymous, because your data is safe with us. All published materials are protected against copying and we carefully monitor the security of your data. All personal correspondence is securely encrypted. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+
+			</section>
+			<!-- //Section earnings -->
+
+			<!-- Section gallery -->
+			<section class="sect__gallery">
+				<h2 class="sect-title container text-center basic-black-color">#SITE NAME</h2>
+				<p class="container sect-subtitle text-center">Do you want to see more? Be a part of the world Site Name! Chat and enjoy beautiful images.</p>
+
+				<div class="container">
+					<div class="gallery">
+						<div class="row align-horisontal-start gallery__row">
+							<div class="gallery-item__wrapper">
+								<div class="gallery-item"><img src="img/gallery/1.png" alt=""></div>
+							</div>
+							<div class="gallery-item__wrapper">
+								<div class="gallery-item gallery-item__video"><img src="img/gallery/2.png" alt=""></div>
+							</div>
+							<div class="gallery-item__wrapper">
+								<div class="gallery-item"><img src="img/gallery/1.png" alt=""></div>
+							</div>
+							<div class="gallery-item__wrapper">
+								<div class="gallery-item"><img src="img/gallery/2.png" alt=""></div>
+							</div>
+							<div class="gallery-item__wrapper">
+								<div class="gallery-item"><img src="img/gallery/1.png" alt=""></div>
+							</div>
+							<div class="gallery-item__wrapper">
+								<div class="gallery-item"><img src="img/gallery/2.png" alt=""></div>
+							</div>
+							<div class="gallery-item__wrapper">
+								<div class="gallery-item"><img src="img/gallery/1.png" alt=""></div>
+							</div>
+							<div class="gallery-item__wrapper">
+								<div class="gallery-item"><img src="img/gallery/2.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row align-horisontal-center align-vertical-center gallery-btns__row">
+						<a href="#" class="btn btn-widest btn-secondary-gradient"><span>Join as Fan</span></a>
+						<span class="or">or</span>
+						<a href="#" class="btn btn-widest btn-transparent"><span>Join as Celebrity</span></a>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section gallery -->
+
+		</main>
 		<!-- //Main -->
 
 		<!-- Footer -->
-		<footer class="footer"></footer>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__container">
+			<div class="row align-horisontal-between row-gutters footer__row">
+				<div class="footer-col col-gutters">
+					<!-- logo -->
+					<a href="/" class="logo" title="Site Name">
+						<img src="img/logo.svg" alt="Site Name Logo">
+						<span>Site Name</span>
+					</a>
+					<!-- //logo -->
+
+					<nav class="footer-nav">
+						<ul>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Become Content Creator</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- //col -->
+
+				<div class="footer-col col-gutters">
+					<h2 class="footer-col__title basic-white-color">Choose Language</h2>
+
+					<nav class="footer-nav">
+						<ul>
+							<li><a href="#">English</a></li>
+							<li><a href="#">Русский</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- //col -->
+
+				<div class="footer-col col-gutters">
+
+					<h2 class="footer-col__title basic-white-color">Feel free to Contact Us</h2>
+					<a href="mailto:sitename_contact@email.com" class="footer-link">sitename_contact@email.com</a>
+				</div>
+				<!-- //col -->
+			</div>
+		</div>
+
+		<div class="disclaimer">
+			<div class="footer__container">
+				<p><strong>Disclaimer:</strong> All users of this site have confirmed that they are 18 years old or more.</p>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="footer__container">
+				2020&copy; Site Name.  18 U.S.C 2257 Record-Keeping Requirements Compliance Statement
+			</div>
+		</div>
+
+	</div>
+	<!-- //container -->
+</footer>
 		<!-- //Footer -->
 
 	</div>
 	<!-- //CONTENT WRAPPER -->
 
-	<!-- jQuery IF NEEDED-->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<!-- All libs scripts -->
-	<!-- 	<script src="js/libs.min.js"></script> -->
-	<!-- Main file with scripts -->
 	<script src="js/common.min.js"></script>
-
 </body>
 
 </html>
